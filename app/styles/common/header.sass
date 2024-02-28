@@ -1,9 +1,14 @@
+.header
+    position: fixed
 .header-container
     width: gem(1440)
     height: gem(80)
-    padding: gem(20) gem(90) gem(20) gem(90)
+    padding-top: gem(40)
     .header-content
         display: flex
+        justify-content: space-between
+        align-items: center
+        margin: 0 auto
         width: gem(1260)
         height: gem(40)
         .header-logo
@@ -12,9 +17,7 @@
             img
                 display: block
         .header-nav
-            width: gem(463)
-            height: gem(18)
-            margin: gem(11) gem(166) gem(11) gem(261.8)
+            padding-left: gem(92)
             .nav-list
                 display: flex
                 flex-direction: row
@@ -26,13 +29,61 @@
             gap: gem(30)
             .sub-menu-item
                 display: flex
+                align-items: center
                 gap: gem(7)
+                position: relative
                 .icon
                     width: gem(14)
                     height: gem(14)
-                    margin-top: gem(13)
                     img
                         display: block
-                .text
-                    width: gem(133)
-                    margin-top: gem(11)
+                        width: 100%
+                        height: 100%
+                .drop-down-menu
+                    position: absolute
+                    top: 0
+                    height: 100%
+                    overflow: hidden
+                    left: gem(-20)
+                    padding-top: gem(32)
+                    opacity: 0
+                    &:hover
+                        opacity: 1
+                        height: max-content
+                .drop-down-list
+                    background-color: #FFFFFF
+                    width: gem(103)
+                    position: relative
+                    &::before
+                        content: ''
+                        display: block
+                        width: 0
+                        height: 0
+                        border-left: gem(6) solid transparent
+                        border-right: gem(6) solid transparent
+                        border-bottom: gem(8) solid #FFFFFF
+                        position: absolute
+                        top: gem(-6)
+                        right: 0
+                        left: 0
+                        margin: 0 auto
+                .drop-down-item
+                    border-bottom: 1px solid rgba(9, 81, 152, 0.2)
+                    padding: gem(10) 0
+                    padding-left: gem(20)
+                    display: flex
+                    align-items: center
+                    gap: gem(7)
+                    &.active
+                        .item-icon
+                            opacity: 1
+                    &:last-child
+                        border-bottom: none
+                .item-icon
+                    width: gem(8)
+                    height: gem(5)
+                    opacity: 0
+                    svg
+                        display: block
+                        width: 100%
+                        height: 100%

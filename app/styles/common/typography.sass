@@ -30,6 +30,8 @@
 
 @mixin desc-1
 	@include mixed-lbl(var(--color-main-dark), var(--main-font), var(--font-size-desc1), var(--font-weight-4), var(--letter-spacing), var(--line-height-desc1))
+@mixin desc-1-leng
+	@include mixed-lbl(var(--color-main-dark), var(--main-font), var(--font-size-desc1), var(--font-weight-4), var(--letter-spacing), var(--line-height-desc1-leng))
 
 html, body, div, span,
 h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -66,3 +68,5 @@ article, footer, header, nav, section
 		@include title-h4
 	&.desc-1
 		@include desc-1
+	&.desc-1-leng
+		@include desc-1-leng
