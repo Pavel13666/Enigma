@@ -1,28 +1,54 @@
 @import 'base.sass'
+.hero
+    position: relative
+.play-btn-wrap
+    position: absolute
+    bottom: gem(170)
+    left: gem(102)
+    .play-btn
+        height: gem(40)
+        display: flex
+        position: relative
+        background-color: transparent
+        border: none
+        align-items: center
+        &:hover
+            .circle
+                width: gem(210)
+                height: gem(40)
+                border-radius: gem(20)
+                transition: width 0.5s
+        .circle
+            position: absolute
+            width: gem(40)
+            height: gem(40)
+            border-radius: gem(20)
+            border: gem(1) solid var(--color-main-accent)
+            left: gem(-13)
+            transition: width 0.5s
+        .triangle
+            margin-right: gem(28)
+        .desc-1
+            font-size: gem(14)
+            line-height: gem(16.21)
+            color: #E72E9D
+            text-transform: uppercase
+            span
+                margin-left: gem(5)
+.cub
+    position: absolute
+    top: gem(70)
+    right: 0
+    img
+        display: block
 .container
-    padding: gem(220) gem(810) 0 gem(180)
+    padding: gem(220) gem(810) gem(376) gem(180)
     .content-wrap
         width: gem(450)
-        .title-wrap
         .text
             margin-top: gem(20)
             margin-bottom: gem(33)
     .aside-wrap
         display: flex
         .aside-left
-            display: flex
-            background-color: #20B1F9
-            width: gem(193)
-            height: gem(50)
-            padding: gem(16) gem(30)
-            justify-content: space-between
             margin-right: gem(10)
-        .aside-right
-            display: flex
-            border: gem(1) solid #20B1F9
-            width: gem(202)
-            height: gem(50)
-            padding: gem(16) gem(30)
-            justify-content: space-between
-        .icon img
-            display: block
