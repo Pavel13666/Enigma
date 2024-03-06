@@ -88,13 +88,18 @@ section
         opacity: 1
 
 .btn
+    width: max-content
     display: flex
     padding: gem(14) gem(30)
     align-items: center
     &-border
-        border: gem(1) solid #20B1F9
+        border: gem(1) solid var(--color-main-accent-opacity50)
+        .desc-1
+            color: var(--color-main-accent)
     &-fill
         background-color: #20B1F9
+        .desc-1
+            color: var(--color-main-light)
     .icon
         width: gem(14)
         height: gem(14)

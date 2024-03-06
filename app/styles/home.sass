@@ -53,11 +53,14 @@
             .aside-left
                 margin-right: gem(10)
 
-.group
+.group,
+.solution
     margin-bottom: gem(148)
     .container
-        padding-left: gem(180)
-    .content-wrap-left
+        padding: 0 gem(180)
+        display: flex
+        justify-content: space-between
+    .content-wrap-list
         .list
             display: flex
             flex-wrap: wrap
@@ -73,3 +76,26 @@
                     display: block
             &-title
                 margin-bottom: gem(10)
+
+    .content-wrap-call
+        .content-wrap
+            width: gem(450)
+            margin-top: gem(100)
+            .description
+                margin-top: gem(20)
+            .button-wrap
+                display: flex
+                gap: gem(10)
+                margin-top: gem(33)
+
+.section-wrap
+    position: relative
+    .background
+        position: absolute
+.solution
+    .container
+        padding: gem(159) gem(210) gem(70) gem(180)
+        .content-wrap-list
+            order: 2
+        .content-wrap-call
+            order: 1
