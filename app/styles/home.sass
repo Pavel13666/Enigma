@@ -1,10 +1,10 @@
 @import 'base.sass'
 .hero
     position: relative
-.play-btn-wrap
-    position: absolute
-    bottom: gem(170)
-    left: gem(102)
+    .play-btn-wrap
+        position: absolute
+        bottom: gem(170)
+        left: gem(102)
     .play-btn
         height: gem(40)
         display: flex
@@ -35,36 +35,37 @@
             text-transform: uppercase
             span
                 margin-left: gem(5)
-.cub
-    position: absolute
-    top: gem(70)
-    right: 0
-    img
-        display: block
-.container
-    padding: gem(220) gem(810) gem(376) gem(180)
-    .content-wrap
-        width: gem(450)
-        .text
-            margin-top: gem(20)
-            margin-bottom: gem(33)
-    .aside-wrap
-        display: flex
-        .aside-left
-            margin-right: gem(10)
+    .cub
+        position: absolute
+        top: gem(70)
+        right: 0
+        img
+            display: block
+    .container
+        padding: gem(220) gem(810) gem(376) gem(180)
+        .content-wrap
+            width: gem(450)
+            .text
+                margin-top: gem(20)
+                margin-bottom: gem(33)
+        .aside-wrap
+            display: flex
+            .aside-left
+                margin-right: gem(10)
 
 .group
     margin-bottom: gem(148)
-.container-group
-    padding-left: gem(180)
+    .container
+        padding-left: gem(180)
     .content-wrap-left
-        .list-item
+        .list-items-wrap
             .list
                 display: flex
                 flex-wrap: wrap
-                width: gem(600)
-                gap: gem(50)
+                width: gem(510)
+                gap: gem(50) gem(30)
             .item
+                width: gem(240)
                 .icon
                     width: gem(40)
                     height: gem(40)
@@ -73,5 +74,4 @@
                         display: block
             h2
                 margin-bottom: gem(10)
-            p
-                width: gem(240)
+
