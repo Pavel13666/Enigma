@@ -98,38 +98,56 @@
             width: 100%
 
 .solution
+    margin-bottom: 0
     .container
-        padding: gem(159) gem(210) gem(70) gem(180)
+        padding: gem(159) gem(210) 0 gem(180)
         .content-wrap-list
             order: 2
             .list
+                width: gem(520)
+                gap: gem(46) gem(40)
             .item
                 &-icon
                     width: gem(43)
-            .item-title
-                .title-h2
-                    color: #FFFFFF
-            .item-description
-                .desc-1
-                    color: #D2EFFD
         .content-wrap-call
             order: 1
             .content-wrap
-                .title
-                    &-h1
-                        color: #FFFFFF
+                margin-top: gem(90)
+
+.community
+    padding-bottom: gem(270)
+    .container
+        display: flex
+        flex-direction: column
+        align-items: center
+        .visual
+            width: gem(854)
+            margin-top: gem(70)
+
+            img
+                display: block
+                width: 100%
+    .content-wrap-call
+        width: gem(470)
+        margin-top: gem(51)
+        .content-wrap
+            display: flex
+            flex-direction: column
+            align-items: center
+            .title
+                &-h1
+
             .description
-                .desc-1
-                    color: #D2EFFD
+                margin-top: gem(20)
+                text-align: center
             .button-wrap
-                .btn
-                    &-fill
-                        background-color: #FFFFFF
-                        .text
-                            .desc-1
-                                color: #20B1F9
-                    &-border
-                        border: gem(1) solid #FFFFFF
-                        .text
-                            .desc-1
-                                color: #FFFFFF
+                display: flex
+                gap: gem(10)
+                margin-top: gem(33)
+.subscribe-section
+    padding-top: gem(157)
+    padding-bottom: gem(150)
+    .container
+        width: gem(540)
+        .title-wrap
+            text-align: center
