@@ -41,6 +41,8 @@
         right: 0
         img
             display: block
+            width: 100%
+            height: 100%
     .container
         padding: gem(220) gem(810) gem(376) gem(180)
         .content-wrap
@@ -95,7 +97,9 @@
         width: gem(1440)
         position: absolute
         img
+            display: block
             width: 100%
+            height: 100%
 
 .solution
     margin-bottom: 0
@@ -127,6 +131,7 @@
             img
                 display: block
                 width: 100%
+                height: 100%
     .content-wrap-call
         width: gem(470)
         margin-top: gem(51)
@@ -145,9 +150,47 @@
                 gap: gem(10)
                 margin-top: gem(33)
 .subscribe-section
-    padding-top: gem(157)
+    padding-top: gem(152)
     padding-bottom: gem(150)
     .container
         width: gem(540)
+        display: flex
+        flex-direction: column
+        align-items: center
+        gap: gem(30)
         .title-wrap
             text-align: center
+        .input-wrap
+            .input
+                position: relative
+                display: flex
+                .input-email
+                    width: gem(360)
+                    font-size: gem(16)
+                    line-height: gem(50)
+                    padding: 0
+                    padding-left: gem(20)
+                    padding-right: gem(38)
+                    color: var(--color-main-dark)
+                    border: gem(1) solid var(--color-main-dark-opacity50)
+                    background-color: transparent
+                    transition: border 0.5s
+                    &::placeholder
+                        opacity: 0.5
+                        font-size: gem(16)
+                        line-height: gem(50)
+                        letter-spacing: -0.7px
+                        color: var(--color-main-dark-opacity80)
+                    &:focus
+                        outline: none
+                        border-color: var(--color-main-dark)
+            .icon
+                width: gem(14)
+                height: gem(12)
+                position: absolute
+                right: gem(19)
+                top: gem(19)
+                svg
+                    display: block
+                    width: 100%
+                    height: 100%

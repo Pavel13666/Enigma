@@ -92,8 +92,8 @@ section
     display: flex
     padding: gem(14) gem(30)
     align-items: center
+    transition: all 0.5s
     &-border
-        transition: all 0.5s
         border: gem(1) solid var(--color-main-accent-opacity50)
         .desc-1
             color: var(--color-main-accent)
@@ -160,6 +160,24 @@ section
             display: block
             width: 100%
             height: 100%
+
+.link
+    display: inline-flex
+    position: relative
+    &::after
+        content: ''
+        display: block
+        width: 0%
+        height: gem(1)
+        background-color: var(--color-main-accent)
+        position: absolute
+        bottom: 0
+        opacity: 0
+        transition: opacity 0.5s, width 0.5s
+    &:hover
+        &::after
+            opacity: 1
+            width: 100%
 
 input
     &::-webkit-input-placeholder,
