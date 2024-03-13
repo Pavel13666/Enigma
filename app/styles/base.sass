@@ -100,6 +100,7 @@ section
             transition: all 0.5s
         .svg-item
             transition: all 0.5s
+
         &:hover
             border: gem(1) solid var(--color-sec-accent)
             .desc-1
@@ -111,14 +112,44 @@ section
             border: gem(1) solid #FFFFFF
             .desc-1
                 color: #FFFFFF
+                transition: all 0.5s
+            .svg-item
+                transition: all 0.5s
+
+            &:hover
+                border: gem(1) solid var(--color-sec-accent)
+                .desc-1
+                    color: var(--color-sec-accent)
+                .svg-item
+                    stroke: var(--color-sec-accent)
+
     &-fill
         background-color: #20B1F9
         .desc-1
             color: var(--color-main-light)
+            transition: all 0.5s
+        .svg-item
+            transition: all 0.5s
+
+        &:hover
+            .desc-1
+                color: var(--color-sec-accent)
+            .svg-item
+                stroke: var(--color-sec-accent)
+
         &-white
             background-color: #FFFFFF
             .desc-1
                 color: #20B1F9
+                transition: all 0.5s
+            .svg-item
+                transition: all 0.5s
+
+            &:hover
+                .desc-1
+                    color: var(--color-sec-accent)
+                .svg-item
+                    stroke: var(--color-sec-accent)
 
     .icon
         width: gem(14)
