@@ -31,3 +31,21 @@
                 display: flex
                 gap: gem(10)
                 margin-top: gem(33)
+
+@media all and (max-width: 1024px)
+    .list-section
+        margin-bottom: gem(100)
+        .container
+            flex-direction: column
+            margin-left: gem(-115)
+            .content-wrap-list
+                order: 2
+                margin-top: gem(100)
+            .content-wrap-call
+                order: 1
+                .content-wrap
+                    margin-top: 0
+                    .button-wrap
+                        gap: gem(20)
+                    .description
+                        width: gem(448)
