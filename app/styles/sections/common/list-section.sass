@@ -37,14 +37,27 @@
         margin-bottom: gem(100)
         .container
             flex-direction: column
-            margin-left: gem(-115)
+            margin: 0
+            padding: 0
             .content-wrap-list
                 order: 2
                 margin-top: gem(100)
+                .list
+                    gap: gem(60) gem(80)
+                    padding-left: gem(128)
+                    width: gem(810)
+                    .item
+                        position: relative
+                        &-icon
+                            position: absolute
+                            left: gem(-65)
+                            top: gem(-2)
+                            margin: 0
             .content-wrap-call
                 order: 1
                 .content-wrap
-                    margin-top: 0
+                    margin-top: gem(-2)
+                    margin-left: gem(64)
                     .button-wrap
                         gap: gem(20)
                     .description
