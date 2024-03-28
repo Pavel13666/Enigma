@@ -1,0 +1,17 @@
+<svg width="320" height="1835" viewBox="0 0 320 1835" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 1780L160 1830L320 1780" stroke="#148CE2" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M0 0H213L320 50V1780L161.491 1829.53C160.52 1829.84 159.48 1829.84 158.509 1829.53L0 1780L0 0Z" fill="#20B1F9"/>
+<mask id="mask0_649_1" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="320" height="1830">
+<path d="M0 0H213L320 50V1780L161.491 1829.53C160.52 1829.84 159.48 1829.84 158.509 1829.53L0 1780L0 0Z" fill="#20B1F9"/>
+</mask>
+<g mask="url(#mask0_649_1)">
+<g opacity="0.05">
+<circle cx="240" cy="240" r="210.5" transform="matrix(1 0 0.0227472 0.999741 -85.6279 1037.52)" stroke="#276DB2" stroke-width="59"/>
+<circle cx="437.575" cy="437.575" r="408.075" transform="matrix(1 0 0.0227472 0.999741 -287.697 840)" stroke="#276DB2" stroke-width="59"/>
+<circle cx="624.623" cy="624.623" r="595.123" transform="matrix(1 0 0.0227472 0.999741 -479 653)" stroke="#276DB2" stroke-width="59"/>
+<circle cx="240" cy="240" r="210.5" transform="matrix(1 0 0.0227472 0.999741 -461.628 -246.477)" stroke="#276DB2" stroke-width="59"/>
+<circle cx="437.575" cy="437.575" r="408.075" transform="matrix(1 0 0.0227472 0.999741 -666 -444)" stroke="#276DB2" stroke-width="59"/>
+<circle cx="624.623" cy="624.623" r="595.123" transform="matrix(1 0 0.0227472 0.999741 -855 -631)" stroke="#276DB2" stroke-width="59"/>
+</g>
+</g>
+</svg>
